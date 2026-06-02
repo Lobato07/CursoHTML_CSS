@@ -6,24 +6,54 @@
     <title>Modelo de caixas</title>
     <style>
         h1{
+            /* display: inline; */
             background-color: lightgray;
             height: 300px;
             width: 300px;
-            border-width: 10px;
-            border-style: solid;
-            border-color: darkslategray;
 
-            padding-top: 10px;
+            /* border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray; */
+            /* simplificação/shorthand: */
+            border: 10px solid darkslategray;
+            
+
+            /* padding-top: 10px;
             padding-right: 10px;
             padding-bottom: 10px;
-            padding-left: 10px;
+            padding-left: 10px; */
             /* ordem das coisas: sentido HORÁRIO */
+            padding: 10px 10px 10px 10px;
+            /* caso as 4 medidas sejam IGUAIS, da pra por só uma vez! */
+            /* seria: padding: 10px */
+
+            /* caso você botasse:
+            
+            padding: 10px 20px;
+            ele faria com que o padding-top/bottom ficassem com 10px
+            e o padding-right/left ficassem com 20px
+            */
+
+            /* margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px; */
+            /* margin: auto; centraliza */
+            margin: 20px auto 40px auto;
+
+
+            /* outline-width: 5px; fica entre a margem e a borda
+            outline-style: dashed;
+            outline-color: salmon;  */
+
+            outline: 5px dashed salmon;
         }
 
         a{
-            border-width: 10px;
+            /* border-width: 10px;
             border-style: solid;
-            border-color: red;
+            border-color: red; */
+            border: 10px solid red;
         }
     </style>
 </head>
