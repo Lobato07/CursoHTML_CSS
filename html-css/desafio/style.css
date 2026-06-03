@@ -53,6 +53,7 @@ header p{
 }
 
 nav{
+    display: flex;
     text-align: left;
     padding-left: 10px;
     padding-bottom: 5px;
@@ -63,6 +64,18 @@ nav > a{
     color: var(--cor0);
     padding-right: 20px;
     font-weight: bold;
+}
+
+nav:hover{
+    color: var(--cor3);
+}
+
+a:hover{
+    color: var(--cor4);
+}
+
+a:active{
+    color: var(--cor4);
 }
 
 
